@@ -25,6 +25,6 @@ sudo systemctl restart nginx
 
 # setup mysql db
 mysql -h db_endpoint -u db_user -p"db_passwd" -e "CREATE DATABASE db_name;"
-mysql -h db_endpoint -u db_user -p"db_passwd" -e "GRANT ALL ON nama-db.* TO 'db_user'@'%';"
+mysql -h db_endpoint -u db_user -p"db_passwd" -e "GRANT ALL ON db_name.* TO 'db_user'@'%';"
 mysql -h db_endpoint -u db_user -p"db_passwd" -e "FLUSH PRIVILEGES;"
 mysql -h db_endpoint -u db_user -p"db_passwd" db_name < /var/www/pesbuk/dump.sql
