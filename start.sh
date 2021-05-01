@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 sudo apt-get install -y nginx s3fs php-fpm php-mysql mysql-client
 
 # setup pass s3
