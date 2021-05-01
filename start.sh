@@ -10,10 +10,11 @@ sudo cp -R /sp2setup-master/* /var/www/pesbuk
 # sudo s3fs ember-mochidaz /var/www/pesbuk/img -o passwd_file=/etc/passwd-s3fs -o url=https://s3.ap-southeast-1.amazonaws.com -ouid=1001,gid=1001,allow_other
 
 
-sed -i 's/rds_end_point/db_endpoint/g' /var/www/pesbuk/config.php
-sed -i 's/val_db_user/db_user/g' /var/www/pesbuk/config.php
-sed -i 's/val_db_pass/db_passwd/g' /var/www/pesbuk/config.php
-sed -i 's/val_db_name/db_name/g' /var/www/pesbuk/config.php
+sed -i 's/rdsendpoint/db_endpoint/g' /var/www/pesbuk/config.php
+sed -i 's/valdbuser/db_user/g' /var/www/pesbuk/config.php
+sed -i 's/valdbpass/db_passwd/g' /var/www/pesbuk/config.php
+sed -i 's/valdbname/db_name/g' /var/www/pesbuk/config.php
+
 
 
 # setup nginx sites file

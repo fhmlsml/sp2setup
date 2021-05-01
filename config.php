@@ -1,9 +1,9 @@
 <?php
 
-$db_host = "rds_end_point";
-$db_user = "val_db_user";
-$db_pass = "val_db_pass";
-$db_name = "val_db_name";
+$db_host = "rdsendpoint";
+$db_user = "valdbuser";
+$db_pass = "valdbpass";
+$db_name = "valdbname";
 
 try {    
     //create PDO connection 
